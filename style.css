@@ -20,6 +20,8 @@ html { box-sizing: border-box; }
  border-radius: 30px;
 */
 
+/*text-rendering: optimizeLegibility; přesunuto do body do mého css*/
+
 /* ----- zde zacni psat vlastni css ----- */
 
 :root {
