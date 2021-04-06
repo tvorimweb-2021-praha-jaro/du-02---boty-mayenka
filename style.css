@@ -81,8 +81,6 @@ body {
 }
 
 .bota {
-  /*position: relative;
-  left: -120px;*/
   position: absolute;
   right: 820px;
   bottom: 400px;
@@ -93,9 +91,6 @@ body {
   position: absolute;
   right: 850px;
   bottom: 430px;
-  /*position: relative;
-  left: 125px;
-  top: -78px;*/
 }
 
 .cena {
@@ -149,20 +144,24 @@ h2 {
   padding: 10px;
 }
 
+.velikosti li:hover {
+  color: var(--green);
+}
+
 .akce {
   display: inline-block;
   background-color: var(--orange);
   max-width: 150px;
   height: 3rem;
-  /*position: relative;
-  left: 0px;
-  bottom: 80px;*/
   position: absolute;
   left: 850px;
   bottom: 430px;
-  /*margin-top: 169px;*/
   padding-top: 15px;
   border-radius: 10px;
+}
+
+.akce:hover {
+  background-color: var(--darkgray);
 }
 
 .tlacitko {
@@ -172,6 +171,10 @@ h2 {
   text-decoration: none;
 }
 
+.tlacitko:hover {
+  color: var(--green);
+}
+
 .vybrana  {
   color: var(--orange);
   font-weight: bold;
@@ -179,3 +182,7 @@ h2 {
   border-radius: 50%;
 }
 
+.vybrana:hover {
+  color: var(--green);
+  border: 1px solid var(--green);
+}
