@@ -37,13 +37,16 @@ html { box-sizing: border-box; }
 
 body { 
   text-rendering: optimizeLegibility;
-  max-width: 670px;
-  max-height: 440px;
-  margin: auto;
   background-color: var(--lightgray);
   font-family: 'Rubik', sans-serif;
   font-size: 14px;
   font-weight: 400;
+}
+
+.zbozi {
+  max-width: 670px;
+  max-height: 440px;
+  margin: auto;
   padding-top: 100px; /*odsun od horního kraje prohlížeče*/
 }
 
@@ -52,6 +55,7 @@ body {
   width: 50%;
   height: 440px;
   float: left;
+  display: flow-root;
 }
 
 .vizual {
@@ -77,15 +81,21 @@ body {
 }
 
 .bota {
-  position: relative;
-  left: -120px;
+  /*position: relative;
+  left: -120px;*/
+  position: absolute;
+  right: 820px;
+  bottom: 400px;
 }
 
 .cenovka {
   max-width: 150px;
-  position: relative;
+  position: absolute;
+  right: 850px;
+  bottom: 430px;
+  /*position: relative;
   left: 125px;
-  top: -78px;
+  top: -78px;*/
 }
 
 .cena {
@@ -114,7 +124,7 @@ body {
 }
 
 .popis {
-  padding-top: 10px;
+  margin-top: var(--spacer);
   margin-bottom: var(--spacer);
 }
 
@@ -144,10 +154,13 @@ h2 {
   background-color: var(--orange);
   max-width: 150px;
   height: 3rem;
-  position: relative;
+  /*position: relative;
   left: 0px;
-  bottom: 80px;
-  margin-top: 169px;
+  bottom: 80px;*/
+  position: absolute;
+  left: 850px;
+  bottom: 430px;
+  /*margin-top: 169px;*/
   padding-top: 15px;
   border-radius: 10px;
 }
